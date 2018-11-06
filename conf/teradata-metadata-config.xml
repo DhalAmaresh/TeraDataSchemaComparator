@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables xmlns:ns2="tables">
+	<table>
+		<sourceName>ALSCOM_BAYALSACCTDETAIL</sourceName>
+		<sourceSchema>EDWDE2_IMGVR</sourceSchema>
+	</table>
+</tables>
