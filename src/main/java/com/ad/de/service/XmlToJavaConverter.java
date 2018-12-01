@@ -1,13 +1,5 @@
 package com.ad.de.service;
 
-//import com.emc.ps.appmod.exception.DataValidatorException;
-
-/**
- * 
- * @author ayon.bhattacharya
- *
- */
-
 public interface XmlToJavaConverter<T> {
 
 	/**
