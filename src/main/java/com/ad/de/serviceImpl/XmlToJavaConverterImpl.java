@@ -11,15 +11,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.stereotype.Service;
-
 import com.ad.de.service.XmlToJavaConverter;
 
-
-/**
- * 
- * @author ayon.bhattacharya
- *
- */
 
 @Service
 public class XmlToJavaConverterImpl<T> implements XmlToJavaConverter<T>{
@@ -28,8 +21,7 @@ public class XmlToJavaConverterImpl<T> implements XmlToJavaConverter<T>{
 	
 	@Autowired
 	private Jaxb2Marshaller jaxb2Marshaller;
-	
-	
+		
 	public XmlToJavaConverterImpl() {
 	}
 	@SuppressWarnings("unchecked")
@@ -40,10 +32,7 @@ public class XmlToJavaConverterImpl<T> implements XmlToJavaConverter<T>{
 		}catch(Exception e ){
 			LOGGER.error("Error while reading xml file {}, root cause is {}", xmlfile, e.getMessage());
 			LOGGER.error(e.getMessage(),e);
-			throw new DatastoreValidationException(e.getMessage(),e);
-			
+			throw new DatastoreValidationException(e.getMessage(),e);		
 		}
-	
 	}
-
 }
